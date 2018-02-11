@@ -1,0 +1,183 @@
+body,html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato",sans-serif;
+    font-weigth:400;
+    color:#666;
+}
+
+.barraInicio{
+   background-color:#006080;
+   font-family:sans-serif;
+   font-size:20px;
+    color:#fff;
+    font:bolder;
+}
+
+.pimg1, .pimg2{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height:100%;
+}
+
+.pimg1{
+    background-image:url(../img/building.jpg);
+    
+}
+
+.pimg2{
+    background-image:url(../img/chess.jpg);
+}
+
+#ImgenLogo{
+    max-height:250px;
+    margin-bottom:100px;
+    padding-right:23%;
+    margin:0px;
+}
+
+.DivBienvenida{
+    position:inherit;
+    width:100%;
+    text-align:center;
+    font-weight: bold;
+    color:#fff;
+    font-size:50px;
+    padding-top:120px;
+    padding-right:23%;
+    padding-left:23%;
+    padding-bottom:120px;
+}
+
+.section{
+    text-align:center;
+    padding: 50px 80px;
+    background-color:#1A405F;
+    color:#fff;
+}
+
+.section h2{
+   font-size:45px;
+   padding-bottom:35px;
+}
+
+.section p{
+   font-size:25px;
+   padding-top:15px;
+   padding-bottom:15px;
+}
+
+
+.login{
+    position:inherit;
+    min-height:100%;
+    top:30%;
+    width:100%;
+    padding-top:130px;
+    padding-bottom:60px;
+}
+
+.loginBox{
+   background: rgba(0,0,0,.5);
+   margin-left:30%;
+   margin-right:30%;
+   max-width:1440px;
+   font-size:100%;
+}
+
+form{
+    margin:auto;
+    width:50%;
+    padding-bottom:4%;
+   padding-top:4%;
+    max-width:1000px;
+}
+
+.loginBox h2{
+    padding-bottom:10px;
+    margin-left:10px;
+    margin-right:20px;
+    color:rgb(188,212,232);
+    text-align:center;
+    font-weight:bold;
+}
+
+.loginBox p{
+    margin:0;
+    padding: 0;
+    font-weight: bold;
+    color:#fff;
+    font-weight:bold;
+}
+
+.loginBox input{
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+    border:none;
+    display:block;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    height:30px;
+    color:#fff;
+    font-weight:bold;
+}
+::placeholder{
+    color:rgba(225,255,255,.5);
+    font-size:10px;
+}
+
+.loginBox input[type="submit"]{
+    border:none;
+    outline:none;
+    height:25px;
+    color:#1f2e2e;
+    font-weight:bold;
+    background:#e6ffff;
+    cursor:pointer;
+    border-radius:20px;
+}
+
+.loginBox input[type="submit"]:hover{
+    background:#5d8989;
+    color:#fff;
+}
+
+.loginBox button{
+    width:100%;
+    display:block;
+    border:none;
+    outline:none;
+    height:25px;
+    color:#1f2e2e;
+    font-size:12px;
+    font-weight:bold;
+    background:#e6ffff;
+    cursor:pointer;
+    border-radius:20px;
+}
+
+.loginBox button:hover{
+    background:#5d8989;
+    color:#fff;
+}
+
+#nocuenta{
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+#registro{
+    margin-bottom:40px;
+}
+
+
