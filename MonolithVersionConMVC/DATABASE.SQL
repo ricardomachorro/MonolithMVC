@@ -36,14 +36,32 @@ create table Actividad(
 );
 
 create table Proyecto(
-	IDProyecto int primary key not null auto_increment,
+	IDPryoecto int primary key not null auto_increment,
     Titulo varchar(100),
     FormaDeEntregar varchar(50),
     Descripcion long,
-	IDUsuario int,
+	IDJefe int,
     FechaLimite date,
-    Estado varchar(60),
-    foreign key (IDUsuario) references Usuario(IDUsuario) 
+    Estado varchar(60), 
+    foreign key (IDJefe) references Usuario(IDUsuario) 
+    on update cascade  on delete cascade
+);
+
+create table RelUsuarioProyecto (
+	IDRelUsuarioProyecto int not null primary key auto_increment,
+    IDIntegrante int,
+    IDProyecto int,
+    foreign key (IDIntegrante) references Usuario(IDUsuario),
+    foreign key (IDProyecto) references Proyecto(IDProyecto)
+    on update cascade  on delete cascade
+);
+
+create table ActividadesProyecto (
+	IDActividadProyecto int not null primary key auto_increment,
+    IDRelUsuarioProyecto int,
+    Estado VARCHAR(30),
+    Contenido VARCHAR(50),
+    foreign key (IDRelUsuarioProyecto) references RelUsuarioProyecto(IDRelUsuarioProyecto)
     on update cascade  on delete cascade
 );
 
@@ -59,27 +77,8 @@ create table Examen(
     on update cascade  on delete cascade
 );
 
-create table Colaboradores(
- IDColaborador int primary key not null auto_increment,
- IDProyecto int,
- IDUsuario int,
- foreign key (IDUsuario) references Usuario(IDUsuario) 
-on update cascade  on delete cascade,
-foreign key (IDProyecto) references Proyecto(IDProyecto) 
-on update cascade  on delete cascade
-);
 
-create table Mensaje(
-	IDMensaje int primary key not null auto_increment,
-    IDProyecto int,
-    IDColaborador int,
-    Contenido long,
-	Fecha DateTime,
-    foreign key (IDProyecto) references Proyecto(IDProyecto) 
-    on update cascade  on delete cascade,
-    foreign key (IDColaborador) references Colaboradores(IDColaborador) 
-    on update cascade  on delete cascade
-);
+
 
 create table TipoAccion(
   IDTipoAccion int primary key not null auto_increment,

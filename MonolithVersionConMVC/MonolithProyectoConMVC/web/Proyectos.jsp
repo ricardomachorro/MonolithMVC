@@ -7,12 +7,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*,java.io.*;"%>
 <!DOCTYPE html>
-<!DOCTYPE html>
-<%
+<%/*
     HttpSession sesion = request.getSession();
     String Usuario = sesion.getAttribute("usuario").toString();
     String Password = sesion.getAttribute("password").toString();
-
+     */
 %>
 <html>
     <head>
@@ -34,12 +33,22 @@
                     var nombre = $('#CorreoIntegrante').val();
                     $('#VandejaCorreos').append('<div class="row TarjetasCorreo" >' +
                             '<div class="col-12 TarjetasCorreoCarta">' +
-                            nombre + '<img src="img/trash.svg" class="float-right ImagenBasuraCorreo">' +
+                            nombre + '<img src="img/trash.svg" onclick="eliminarlista();" class="float-right ImagenBasuraCorreo">' +
                             '</div>' +
                             '</div>'
                             );
                 });
             });
+
+            $(document).ready(function () {
+                $(".ImagenBasuraCorreo").click(function () {
+                    $(this).remove($(this));
+                });
+            });
+
+
+
+
         </script>
     </head>
     <body>
@@ -143,7 +152,33 @@
                                 <form  id="actividadform" style="width:100%;"   >
                                     <div class="row">
                                         <div class="col-12">
+                                            <h3 align="center;">Elementos del Proyecto</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
                                             <input type="text" placeholder="Nuevo Proyecto" style="width:100%;margin-top:13px;margin-right:13px;">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="text" placeholder="Forma de Entregar" style="width:100%;margin-top:13px;margin-right:13px;">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label  class='col-form-label'>Fecha de Entrega</label>
+                                            <input type="date"  class="col-12" placeholder="Fecha de Entrega" id="FechaEntrega" name="FechaEntrega"> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label for="message-text" class="form-control-label descripcionproyecto">Descripcion:</label>
+                                        <textarea id="Descripcion" class="form-control descripcionproyecto" id="message-text" name="Descripcion" style="width:100%;margin-top:13px;margin-right:13px;"></textarea>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3 align="center;" style="border-top-color:#000;">Integrantes</h3>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -208,7 +243,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12" style="font-size:small;text-align:left;">
-                                                           Dueño
+                                                            Dueño
                                                         </div>
                                                     </div>
                                                 </div>
@@ -229,7 +264,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12" style="font-size:small;text-align:left;">
-                                                           Dueño
+                                                            Dueño
                                                         </div>
                                                     </div>
                                                 </div>
@@ -250,7 +285,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12" style="font-size:small;text-align:left;">
-                                                           Dueño
+                                                            Dueño
                                                         </div>
                                                     </div>
                                                 </div>
@@ -271,7 +306,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12" style="font-size:small;text-align:left;">
-                                                           Dueño
+                                                            Dueño
                                                         </div>
                                                     </div>
                                                 </div>

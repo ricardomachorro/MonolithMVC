@@ -1,0 +1,135 @@
+
+#BarraNavegacion{
+  background-color:#6ebacc;  
+}
+
+#BarraNavegacion img{
+ width:30px;
+ height:30px;
+ margin-right:9px;
+}
+
+#SeccionNombreEmpresa div{
+ box-sizing:border-box;
+ line-height:1.5;
+ overflow-x:hidden;
+}
+
+.v-header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  color:#fff;
+}
+
+.container{
+  max-width:960px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+}
+
+.fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height:100%;
+  min-width:100%;
+}
+
+.header-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#225470;
+  opacity:0.85;
+}
+
+.header-content{
+  z-index:2;
+}
+
+.header-content h1{
+  font-size:50px;
+  margin-bottom:0;
+}
+
+.header-content p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+}
+
+
+
+@media(max-width:960px){
+    .container{
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+}
+/**/
+#SeccionEmpresa{
+    color:#000;
+    background-color:#fff;
+}
+
+.imagenesEmpresa{
+    height:300px;
+    margin-top:33px;
+    margin-bottom:33px;
+    margin-left:93px;
+   margin-right:43px;
+   
+}
+
+.EmpresaInfo p {
+    margin-top:63px;
+    margin-bottom:83px;
+    font-size:25px;
+}
+
+.EmpresaInfo h1 {
+    margin-top:63px;
+    margin-bottom:83px;
+    font-size:25px;
+}
+
+#DivConocenos{
+    background-color:#0b5da5;
+}
+
+#DivMisionVision{
+    background-color:#0b5da5;
+}
+
+#TituloConocenos{
+    padding:30px;
+    color:#fff;
+    font-weight:bold;
+}
+
+#ContenidoConocemos{
+    padding:32px;
+    margin:12px;
+    font-size:25px;
+}
+
+.imagenesRedes{
+    height:190px;
+    width:190px;
+    margin-top:23px;
+   margin-left:123px;
+   margin-right:143px;
+    margin-bottom:93px;
+}
