@@ -1,0 +1,29 @@
+.ContenedoresListasColgantes{
+    padding:13px;
+}
+
+.ListasColgantes{
+    color:#313D66;
+    padding:13px;
+    text-height:max-size;
+    font-weight:bolder;
+    border-bottom:6px solid #17a2b8;
+    background-color:#fff;
+}
+
+.SeccionProyectos{
+    background-color:#fff;
+    margin:13px;
+    height:600px;
+}
+
+.ContenedorListaGrupos{
+    background-color:#fff;
+    height:550px;
+    margin:13px;
+    padding:13px;
+}
+
+.ContenedorGrupos{
+    overflow-y:scroll;
+}

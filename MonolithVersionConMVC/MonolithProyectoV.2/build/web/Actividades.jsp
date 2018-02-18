@@ -69,7 +69,7 @@ Author     : Ricardo
         <!--Fin Barra de Navegación-->
 
         <div class="container-fluid">
-            <!--contenedor elementos-->
+            <!--Contenedor elementos-->
             <div class="row">
                 <!--Contendor de Actividades Actuales-->
                 <div class="col-lg-8 col-md-8 col-sm-12" >
@@ -138,8 +138,8 @@ Author     : Ricardo
                             </div>
                             <!--Fin Titulo de Categorias-->
                             <!--Contenedor lista de Categorias-->
-                            <div class="row ContenedorListaCategorias ">
-                                <div class="col-12 ContenedorCarpetas">
+                            <div class="row ContenedorListaGrupos ">
+                                <div class="col-12 ContenedorGrupos">
                                     <!--Contenedor de Categoria-->
                                     <div class="row Categorias" >
                                         <div class="col-2">
