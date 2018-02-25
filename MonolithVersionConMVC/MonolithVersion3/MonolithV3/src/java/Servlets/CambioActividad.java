@@ -68,7 +68,7 @@ public class CambioActividad extends HttpServlet {
             act.setFechaLimite(java.sql.Date.valueOf(Fecha));
             act.setUsuario(sesion.getAttribute("usuario").toString());
             act.setDescripcion(descripcion);
-             db.CambiarActividad(act,identificador);
+            db.CambiarActividad(act,identificador);
             response.sendRedirect("Actividades.jsp");
             
         } catch (Exception ex) {
