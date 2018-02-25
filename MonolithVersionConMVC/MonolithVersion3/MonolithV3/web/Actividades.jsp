@@ -7,6 +7,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!DOCTYPE html>
+<%
+    HttpSession sesion = request.getSession();
+    String Usuario = sesion.getAttribute("usuario").toString();
+    String Password = sesion.getAttribute("password").toString();
+     
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,7 +21,6 @@
         <link href="Css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="Css/BarraDeInicioSesion.css" rel="stylesheet" type="text/css">
         <link href="Css/ActividadesCSS.css" rel="stylesheet" type="text/css">
-
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -74,53 +79,141 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 SeparadorTituloContendores">
-             
                                 </div>
                             </div>
-                            <div class="row" style="overflow-y:scroll;height:330px;" >
+                            <div class="row" style="overflow-y:scroll;height:700px;">
                                 <div class="col-12" >
-                                    <div class="row ActividadDiv" style="margin:2px;height:20px;background-color:#0062cc;">
-                                        <div class="col-12">
-                                            <div class="row">
-                                                <div class="col-3">
+                                    <div class="row" style="margin:13px;height:50px;">
+                                        <div class="col-8">
+                                            <input type="text" placeholder="Nueva Actividad" style="width:100%;height:40px;">
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn-primary" id="BotonAgregarActividad">Ingresar</button>
+                                        </div>
+                                    </div>
+                                    <!--Actividad Abierta-->
+                                    <div class="row " >
+                                        <div class="col-10 ActividadDiv" >
+                                            <div class="row SeccionesActividad">
+                                                <div class="col-3 ContenedorSeccionesActividad">
                                                     Actividad
                                                 </div>
-                                                 <div class="col-3">
+                                                 <div class="col-3 ContenedorSeccionesActividad">
                                                      Fecha
                                                 </div>
-                                                 <div class="col-3">
-                                                     Localizacion
+                                                 <div class="col-3 ContenedorSeccionesActividad">
+                                                     <a class="float-left">Localizacion</a>
                                                 </div>
-                                                 <div class="col-3">
-                                                     Categoria
+                                                 <div class="col-3 ContenedorSeccionesActividad">
+                                                     <a class="float-left"> Categoria</a>
                                                 </div>
                                             </div> 
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <input type="text" placeholrer="Nombre">
+                                            <div class="row SeccionesActividad">
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    <input type="text" placeholder="Nombre">
                                                 </div>
-                                                 <div class="col-3">
-                                                     <input type="text" placeholrer="Fecha">
+                                                 <div class="col-3 ContenedorSeccionesActividad">
+                                                     <input type="text" placeholder="Fecha">
                                                 </div>
-                                                 <div class="col-3">
-                                                    <input type="text" placeholrer="Categoria">
+                                                 <div class="col-3 ContenedorSeccionesActividad">
+                                                    <input type="text" placeholder="Categoria">
                                                 </div>
-                                                 <div class="col-3">
+                                                 <div class="col-3 ContenedorSeccionesActividad">
                                                      Categoria
+                                                </div>
+                                            </div>
+                                            <div class="row " >
+                                                <div class="col-6 EliminarActividad" >
+                                                    <a> Eliminar Actividad</a><img class="float-right" src="img/TacheBlanco.svg">
+                                                </div>
+                                                <div class="col-6 GuardarActividad"> 
+                                                    <a> Guardar Cambios</a><img class="float-right" src="img/save.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Fin Actividad Abierta-->
+                                    <!-- Actividad Cerrada-->
+                                    <div class="row " >
+                                        <div class="col-10 ActividadDiv" >
+                                            <div class="row SeccionesActividad">
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    Actividad
+                                                </div>
+                                                 <div class="col-3 ContenedorSeccionesActividad">
+                                                     Fecha
+                                                </div>
+                                                 <div class="col-3 ContenedorSeccionesActividad">
+                                                     <a class="float-left">Localizacion</a>
+                                                </div>
+                                                 <div class="col-3 ContenedorSeccionesActividad">
+                                                     <a class="float-left"> Categoria</a>
                                                 </div>
                                             </div> 
                                         </div>
-                                    </div>   
+                                    </div>
+                                    <!--Fin Actividad Cerrada-->
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>  
                 </div>
+                
                 <div class="col-lg-4 col-md-4 col-sm-12" >
-                    <div class="row BandejaActividades" >
+                    <div class="row BandejaLateral" >
                         <div class="col-12 ">
-                            
+                            <div class="row">
+                                <div class="col-12 TituloLateralesContenedores">
+                                    <div class="row">
+                                        <div class="col-8" style="padding-top:40px;">
+                                            <a>Categoria</a>
+                                        </div> 
+                                        <div class="col-4">
+                                            <img class="float-right" src="img/folderOrange.svg" ><!--E3A229-->
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 SeparadorTituloContendores" id="folderSeparador">
+           
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12" style="height:250px;background-color:#fff;overflow-y:scroll;">
+                                    <ul>
+                                        <li><img src="img/folderOrange.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/folderOrange.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/folderOrange.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 TituloLateralesContenedores">
+                                    <div class="row">
+                                        <div class="col-8" style="padding-top:40px;">
+                                            <a>Localizaciones</a>
+                                        </div> 
+                                        <div class="col-4">
+                                            <img class="float-right" src="img/placeholder.svg" ><!--E3A229-->
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 SeparadorTituloContendores" id="folderSeparador">
+           
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12" style="height:250px;background-color:#fff;overflow-y:scroll;">
+                                    <ul>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
