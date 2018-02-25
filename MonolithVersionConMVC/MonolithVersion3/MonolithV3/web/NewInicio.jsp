@@ -10,7 +10,6 @@
     HttpSession sesion = request.getSession();
     String Usuario = sesion.getAttribute("usuario").toString();
     String Password = sesion.getAttribute("password").toString();
-     
 %>
 <html>
     <head>

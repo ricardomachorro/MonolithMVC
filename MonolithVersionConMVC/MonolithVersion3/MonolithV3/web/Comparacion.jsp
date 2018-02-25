@@ -74,7 +74,7 @@
         %>
         <script>
             alert("¡Listo!. Ha completado su registro exitosamente");
-            window.location = 'InicioSesion.jsp';
+            window.location = 'Actividades.jsp';
         </script>
         <%        } else {
             //out.println("No exitoso");
