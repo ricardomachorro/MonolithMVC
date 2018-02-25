@@ -68,7 +68,7 @@ public class DataBase {
         c.close();
     }
 
-    /*
+    
     public void IngresarActividad(Actividad act) throws SQLException {
         String sql = "insert into actividad(Titulo,FormaDeEntregar,Descripcion,IDUsuario,FechaLimite,Estado) values (?,?,?,?,?,?);";
         ps = c.prepareStatement(sql);
@@ -184,6 +184,6 @@ public class DataBase {
             num = rs.getInt("IDUsuario");
         }
         return num;
-    }*/
+    }
 
 }
