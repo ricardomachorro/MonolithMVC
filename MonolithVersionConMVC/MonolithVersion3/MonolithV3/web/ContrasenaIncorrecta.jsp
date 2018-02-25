@@ -24,7 +24,7 @@
         <link href="js/FormularioRegistro.js"  type="text/javascript">
     </head>
      <body class="container-fluid">
-        <div class="barraInicio navbar navbar-default " style="font-family:Mukta">Monolith<img  class="logo" src="img/logo.png"></div>
+        <div class="barraInicio navbar navbar-default " style="font-family:Mukta">Monolith<img  class="logo" src="img/logo.svg"></div>
         <div class="form-register"  >
             <h2 class="form-titulo">Contraseña mal puesta</h2>
              <%
