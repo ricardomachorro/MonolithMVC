@@ -4,7 +4,7 @@
     Author     : Alex
 --%>
 
-<%@page import="Cifrados.Seguridad"%>
+<%@page import="Seguridad.Seguridad"%>
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
