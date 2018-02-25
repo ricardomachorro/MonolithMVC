@@ -7,11 +7,11 @@ Author     : Ricardo
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*,java.io.*;"%>
 <!DOCTYPE html>
-<%
+<%/*
     HttpSession sesion = request.getSession();
     String Usuario = sesion.getAttribute("usuario").toString();
     String Password = sesion.getAttribute("password").toString();
-
+*/
 %>
 <html>
     <head>
