@@ -67,7 +67,7 @@
                                             <a>Bandeja Principal de Actividades</a>
                                         </div> 
                                         <div class="col-4">
-                                             <img class="float-right" src="img/copy.svg" >
+                                            <img class="float-right" src="img/copy.svg" >
                                         </div> 
                                     </div>
                                 </div>
@@ -93,28 +93,28 @@
                                                 <div class="col-3 ContenedorSeccionesActividad">
                                                     Actividad
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
-                                                     Fecha
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    Fecha
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
-                                                     <a class="float-left">Localizacion</a>
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    <a class="float-left">Localizacion</a>
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
-                                                     <a class="float-left"> Categoria</a>
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    <a class="float-left"> Categoria</a>
                                                 </div>
                                             </div> 
                                             <div class="row SeccionesActividad">
                                                 <div class="col-3 ContenedorSeccionesActividad">
                                                     <input type="text" placeholder="Nombre">
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
-                                                     <input type="text" placeholder="Fecha">
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    <input type="text" placeholder="Fecha">
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
+                                                <div class="col-3 ContenedorSeccionesActividad">
                                                     <input type="text" placeholder="Categoria">
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
-                                                     Categoria
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    Categoria
                                                 </div>
                                             </div>
                                             <div class="row " >
@@ -135,14 +135,14 @@
                                                 <div class="col-3 ContenedorSeccionesActividad">
                                                     Actividad
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
-                                                     Fecha
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    Fecha
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
-                                                     <a class="float-left">Localizacion</a>
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    <a class="float-left">Localizacion</a>
                                                 </div>
-                                                 <div class="col-3 ContenedorSeccionesActividad">
-                                                     <a class="float-left"> Categoria</a>
+                                                <div class="col-3 ContenedorSeccionesActividad">
+                                                    <a class="float-left"> Categoria</a>
                                                 </div>
                                             </div> 
                                         </div>
@@ -153,7 +153,7 @@
                         </div>
                     </div>  
                 </div>
-                
+
                 <div class="col-lg-4 col-md-4 col-sm-12" >
                     <div class="row BandejaLateral" >
                         <div class="col-12 ">
@@ -171,7 +171,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 SeparadorTituloContendores" id="folderSeparador">
-           
+
                                 </div>
                             </div>
                             <div class="row">
@@ -197,12 +197,18 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 SeparadorTituloContendores" id="folderSeparador">
-           
+
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12" style="height:250px;background-color:#fff;overflow-y:scroll;">
                                     <ul>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
                                         <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
                                         <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
                                         <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
