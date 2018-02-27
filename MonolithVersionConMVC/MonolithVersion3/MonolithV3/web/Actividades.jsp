@@ -58,6 +58,30 @@
         <div class="container-fluid">
             <div class="row" >
                 <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="row" style="padding:12px;margin:12px;">
+                    
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="row Señaladores">
+                                <div class="col-6"  style="background-color:#fcff84">
+                                    <img src="img/star.svg" class="Señaladores"><a class="float-right">Pendientes</a>
+                                </div> 
+                                <div class="col-6" style="background:#fff;">
+                                    
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="row Señaladores">
+                                <div class="col-6"  style="background-color:#ff8383;">
+                                    <img src="img/warning.svg" class="Señaladores"><a class="float-right">Pendientes</a>
+                                </div> 
+                                <div class="col-6" style="background:#fff;">
+                                    
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
                     <div class="row BandejaActividades">
                         <div class="col-12 ">
                             <div class="row">
@@ -76,78 +100,64 @@
                                 <div class="col-12 SeparadorTituloContendores">
                                 </div>
                             </div>
-                            <div class="row" style="overflow-y:scroll;height:700px;">
+                            <div class="row" style="overflow-y:scroll;height:500px;background-color:#fff;">
                                 <div class="col-12" >
-                                    <div class="row" style="margin:13px;height:50px;">
-                                        <div class="col-8">
-                                            <input type="text" placeholder="Nueva Actividad" style="width:100%;height:40px;">
+                                    <div class="row" style="margin:32px;padding:0">
+                                        <div class="col-10">
+                                            <input type="text" class="form-control" placeholder="NuevaActividad Actividad" width="100%">  
                                         </div>
-                                        <div class="col-4">
-                                            <button class="btn-primary" id="BotonAgregarActividad">Ingresar</button>
-                                        </div>
-                                    </div>
-                                    <!--Actividad Abierta-->
-                                    <div class="row " >
-                                        <div class="col-10 ActividadDiv" >
-                                            <div class="row SeccionesActividad">
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    Actividad
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    Fecha
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    <a class="float-left">Localizacion</a>
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    <a class="float-left"> Categoria</a>
-                                                </div>
-                                            </div> 
-                                            <div class="row SeccionesActividad">
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    <input type="text" placeholder="Nombre">
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    <input type="text" placeholder="Fecha">
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    <input type="text" placeholder="Categoria">
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    Categoria
-                                                </div>
-                                            </div>
-                                            <div class="row " >
-                                                <div class="col-6 EliminarActividad" >
-                                                    <a> Eliminar Actividad</a><img class="float-right" src="img/TacheBlanco.svg">
-                                                </div>
-                                                <div class="col-6 GuardarActividad"> 
-                                                    <a> Guardar Cambios</a><img class="float-right" src="img/save.svg">
-                                                </div>
-                                            </div>
+                                        <div cass>
+                                            <button class="btn-primary" style="background-color:#0062cc;height:40px;">Add<img src="img/add-square-button.svg" style="height:20px;margin:8px;"></button>
                                         </div>
                                     </div>
-                                    <!--Fin Actividad Abierta-->
-                                    <!-- Actividad Cerrada-->
-                                    <div class="row " >
-                                        <div class="col-10 ActividadDiv" >
-                                            <div class="row SeccionesActividad">
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    Actividad
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    Fecha
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    <a class="float-left">Localizacion</a>
-                                                </div>
-                                                <div class="col-3 ContenedorSeccionesActividad">
-                                                    <a class="float-left"> Categoria</a>
-                                                </div>
-                                            </div> 
+                                    
+                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
+                                        <div class="col-12" >
+                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
                                         </div>
                                     </div>
-                                    <!--Fin Actividad Cerrada-->
+                                    
+                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
+                                        <div class="col-12" >
+                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
+                                        <div class="col-12" >
+                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
+                                        <div class="col-12" >
+                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
+                                        <div class="col-12" >
+                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
+                                        <div class="col-12" >
+                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
+                                        <div class="col-12" >
+                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
+                                        <div class="col-12" >
+                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -175,11 +185,11 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12" style="height:250px;background-color:#fff;overflow-y:scroll;">
+                                <div class="col-12 ContenedorLateralElementos" >
                                     <ul>
-                                        <li><img src="img/folderOrange.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/folderOrange.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/folderOrange.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/folderOrange.svg" class="ImagenBarraLateral" >Categoria 1</li>
+                                        <li><img src="img/folderOrange.svg" class="ImagenBarraLateral">Categoria 1</li>
+                                        <li><img src="img/folderOrange.svg" class="ImagenBarraLateral">Categoria 1</li>
                                     </ul>
                                 </div>
                             </div>
@@ -201,11 +211,11 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12" style="height:250px;background-color:#fff;overflow-y:scroll;">
+                                <div class="col-12 ContenedorLateralElementos" >
                                     <ul>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" class="ImagenBarraLateral" >Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" class="ImagenBarraLateral">Categoria 1</li>
+                                        <li><img src="img/placeholder.svg" class="ImagenBarraLateral">Categoria 1</li>
                                         <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
                                         <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
                                         <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
