@@ -21,7 +21,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.validate.js"></script>
     </head>
-    <body>
+    <body style="background-color:#FAFAFA">
         <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,30 +58,31 @@
         <div class="container-fluid">
             <div class="row" >
                 <div class="col-lg-8 col-md-8 col-sm-12">
-                    <div class="row" style="padding:12px;margin:12px;">
                     
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="row Señaladores">
-                                <div class="col-6"  style="background-color:#fcff84">
-                                    <img src="img/star.svg" class="Señaladores"><a class="float-right">Pendientes</a>
-                                </div> 
-                                <div class="col-6" style="background:#fff;">
+                    <div class="row" style="margin:12px;">                       
+                        <div class="col-12" >
+                            <div class="row" style="background-color:#fff;margin:5px;padding:2px;">
+                                <div class="col-lg-4 col-md-4 col-sm-12" style="background-color:#fff9aa;box-shadow:0px 0px 1px;">
+                                    <img src="img/star.svg" class="float-left" style="height:20px;width:20px;margin:4px;">
+                                    <a>Actividades finalizadas</a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12" style="background-color:#EF9A9A;box-shadow:0px 0px 1px;">
+                                    <img src="img/warning.svg" class="float-left" style="height:20px;width:20px;margin:4px;">
+                                    <a>Actividades sin terminar</a>
+                                </div>
+                                 <div class="col-lg-4 col-md-4 col-sm-12" style="background-color:#9FA8DA;box-shadow:0px 0px 1px;">
+                                     <img src="img/help-button-speech-bubble-with-question-mark.svg" class="float-left" style="height:20px;width:20px;margin:4px;">
+                                    <a>TTareas sin especificar</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12"style="background-color:#fff;margin:5px;">
                                     
-                                </div> 
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="row Señaladores">
-                                <div class="col-6"  style="background-color:#ff8383;">
-                                    <img src="img/warning.svg" class="Señaladores"><a class="float-right">Pendientes</a>
-                                </div> 
-                                <div class="col-6" style="background:#fff;">
-                                    
-                                </div> 
-                            </div>
-                        </div>
-                        
                     </div>
+                    
                     <div class="row BandejaActividades">
                         <div class="col-12 ">
                             <div class="row">
@@ -103,61 +104,41 @@
                             <div class="row" style="overflow-y:scroll;height:500px;background-color:#fff;">
                                 <div class="col-12" >
                                     <div class="row" style="margin:32px;padding:0">
-                                        <div class="col-10">
+                                        <div class=" col-lg-10 col-md-10 col-sm-7">
                                             <input type="text" class="form-control" placeholder="NuevaActividad Actividad" width="100%">  
                                         </div>
-                                        <div cass>
-                                            <button class="btn-primary" style="background-color:#0062cc;height:40px;">Add<img src="img/add-square-button.svg" style="height:20px;margin:8px;"></button>
+                                        <div class="col-md-2 col-lg-2 col-sm-5">
+                                            <button class="btn-primary" style="background-color:#0062cc;height:40px;width:100%;">Add<img src="img/add-square-button.svg" style="height:20px;margin:8px;"></button>
                                         </div>
                                     </div>
                                     
-                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
-                                        <div class="col-12" >
-                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                
+                                    
+                                    <div class="row" style="height:70px;">
+                                        <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#8ca5cc;margin:2px;" >
+                                            <label>Titulo</label>
+                                            <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Fecha</label>
+                                            <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
+                                            <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
+                                            <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
+                                        </div>
+                                        <div class="col-sm-12  col-md-6 col-lg-6" style="background-color:#8ca5cc;margin:2px;" >
+                                            <img src="img/id-card.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7PX;">Titulo
+                                            <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Fecha
+                                            <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Categoria
+                                            <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Categoria
+                                            <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
                                         </div>
                                     </div>
                                     
-                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
-                                        <div class="col-12" >
-                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
-                                    </div>
                                     
-                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
-                                        <div class="col-12" >
-                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
-                                    </div>
                                     
-                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
-                                        <div class="col-12" >
-                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
-                                    </div>
                                     
-                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
-                                        <div class="col-12" >
-                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
-                                        <div class="col-12" >
-                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
-                                    </div>
                                     
-                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
-                                        <div class="col-12" >
-                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
-                                    </div>
                                     
-                                    <div class="row" style="margin:12px;background-color:#e0fffd;height:50px;padding:9px;">
-                                        <div class="col-12" >
-                                            <label>ssaassa</label> <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
-                                    </div>
                                     
+                                    
+                                                                        
                                 </div>
                             </div>
                         </div>
