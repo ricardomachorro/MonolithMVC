@@ -58,31 +58,48 @@
         <div class="container-fluid">
             <div class="row" >
                 <div class="col-lg-8 col-md-8 col-sm-12">
-                    
+
                     <div class="row" style="margin:12px;">                       
                         <div class="col-12" >
-                            <div class="row" style="background-color:#fff;margin:5px;padding:2px;">
-                                <div class="col-lg-4 col-md-4 col-sm-12" style="background-color:#fff9aa;box-shadow:0px 0px 1px;">
-                                    <img src="img/star.svg" class="float-left" style="height:20px;width:20px;margin:4px;">
-                                    <a>Actividades finalizadas</a>
+                            <div class="row" id="BarraResumenActividades">
+
+                                <div class="col-lg-4 col-md-12 col-sm-12" >
+                                    <div class="row ContenedoresResumen" id="ActividadesHechas" >
+                                        <div class="col-4">
+                                            <img src="img/star.svg" class="float-left ResumenActividadesImagenes" >
+                                        </div>
+                                        <div class="col-8" style="margin-top:18px;">
+                                            <a >Actividades finalizadas</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12" style="background-color:#EF9A9A;box-shadow:0px 0px 1px;">
-                                    <img src="img/warning.svg" class="float-left" style="height:20px;width:20px;margin:4px;">
-                                    <a>Actividades sin terminar</a>
+
+                                <div class="col-lg-4 col-md-12 col-sm-12"  >
+                                    <div class="row ContenedoresResumen" id="ActividadesNoHechas" >
+                                        <div class="col-4">
+                                            <img src="img/warning.svg" class="float-left  ResumenActividadesImagenes" >
+                                        </div>
+                                        <div class="col-8" style="margin-top:18px;">
+                                            <a >Actividades sin finalizar</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                 <div class="col-lg-4 col-md-4 col-sm-12" style="background-color:#9FA8DA;box-shadow:0px 0px 1px;">
-                                     <img src="img/help-button-speech-bubble-with-question-mark.svg" class="float-left" style="height:20px;width:20px;margin:4px;">
-                                    <a>TTareas sin especificar</a>
+
+                                <div class="col-lg-4 col-md-12 col-sm-12"  >
+                                    <div class="row ContenedoresResumen"  id="ActividadesPendientes"  >
+                                        <div class="col-4">
+                                            <img src="img/help-button-speech-bubble-with-question-mark.svg" class="float-left ResumenActividadesImagenes" >
+                                        </div>
+                                        <div class="col-8" style="margin-top:18px;">
+                                            <a >Actividades sin finalizar</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12"style="background-color:#fff;margin:5px;">
-                                    
-                                </div>
-                            </div>
+
+                            </div>                      
                         </div>
                     </div>
-                    
+
                     <div class="row BandejaActividades">
                         <div class="col-12 ">
                             <div class="row">
@@ -105,40 +122,78 @@
                                 <div class="col-12" >
                                     <div class="row" style="margin:32px;padding:0">
                                         <div class=" col-lg-10 col-md-10 col-sm-7">
-                                            <input type="text" class="form-control" placeholder="NuevaActividad Actividad" width="100%">  
+                                            <input type="text" class="form-control" placeholder="Nueva Actividad" width="100%">  
                                         </div>
                                         <div class="col-md-2 col-lg-2 col-sm-5">
                                             <button class="btn-primary" style="background-color:#0062cc;height:40px;width:100%;">Add<img src="img/add-square-button.svg" style="height:20px;margin:8px;"></button>
                                         </div>
                                     </div>
-                                    
-                
-                                    
+
+
+
                                     <div class="row" style="height:70px;">
-                                        <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#8ca5cc;margin:2px;" >
+                                        <div class="col-12">
+                                            <div class="row" style="background-color:#8ca5cc;margin:2px;" >
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
+                                                            <label>Titulo</label>
+                                                        </div>
+                                                        <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
+                                                            <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Fecha</label>
+                                                        </div>
+                                                        <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
+                                                            <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
+                                                        </div>
+                                                        <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
+                                                            <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Localizacion</label>
+                                                        </div>
+                                                        <div class="col-sm-4 col-md-4 col-lg-4"style="padding-top:10px;">
+                                                            <input type="checkbox" class="float-right" style="height:40px;width:20px;">
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="row" style="background-color:#8ca5cc;margin:2px;" > 
+                                                <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
+                                                    <label>Titulo</label>
+                                                </div>
+                                                <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
+                                                    <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Fecha</label>
+                                                </div>
+                                                <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
+                                                    <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
+                                                </div>
+                                                <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
+                                                    <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
+                                                </div>
+                                                <div class="col-sm-4 col-md-4 col-lg-4"style="padding-top:10px;">
+                                                    <input type="checkbox" class="float-right" style="height:40px;width:20px;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--
+                                        <div class="col-sm-12 col-md-5 col-lg-5" style="background-color:#8ca5cc;margin:2px;" >
                                             <label>Titulo</label>
                                             <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Fecha</label>
                                             <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
                                             <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
                                             <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
                                         </div>
-                                        <div class="col-sm-12  col-md-6 col-lg-6" style="background-color:#8ca5cc;margin:2px;" >
+                                        
+                                        <div class="col-sm-12  col-md-5 col-lg-5" style="background-color:#8ca5cc;margin:2px;" >
                                             <img src="img/id-card.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7PX;">Titulo
                                             <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Fecha
                                             <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Categoria
                                             <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Categoria
                                             <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
+                                        </div>-->
                                     </div>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                                                        
+
+
                                 </div>
                             </div>
                         </div>
@@ -197,12 +252,7 @@
                                         <li><img src="img/placeholder.svg" class="ImagenBarraLateral" >Categoria 1</li>
                                         <li><img src="img/placeholder.svg" class="ImagenBarraLateral">Categoria 1</li>
                                         <li><img src="img/placeholder.svg" class="ImagenBarraLateral">Categoria 1</li>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
-                                        <li><img src="img/placeholder.svg" style="height:30px;width:30px;margin:12px;">Categoria 1</li>
+
                                     </ul>
                                 </div>
                             </div>

@@ -3,6 +3,10 @@
     margin:12px;
 }
 
+#BarraResumenActividades{
+    margin:5px;
+}
+
 .Señaladores img{
     height:72px;
     width:72px;
@@ -15,11 +19,37 @@
     font-size:32px;
 }
 
-.BandejaActividades{
-    
+.ContenedoresResumen{
+    box-shadow:0px 0px 1px;
+    margin:1px;
+    margin-bottom:1px;
+    margin-top:1px;
+}
+
+#ActividadesHechas{
+    background-color:#fff9aa;
+}
+
+#ActividadesNoHechas{
+    background-color:#EF9A9A;
+}
+
+#ActividadesPendientes{
+    background-color:#9FA8DA;;
+}
+
+.ResumenActividadesImagenes{
+    height:40px;
+    width:40px;
+    margin-left:4px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.BandejaActividades{   
     min-height:500px;
-    margin:12px;
-    box-shadow:1px 5px 5px;
+    margin:0px;
+    box-shadow:1px 3px 3px;
 }
 
 .TituloContenedores{
@@ -101,8 +131,8 @@
 
 .BandejaLateral{
     min-height:800px;
-    margin:12px;
-     box-shadow:1px 5px 5px;
+    margin:17px;
+    box-shadow:1px 3px 3px;
 }
 
 .TituloLateralesContenedores{
