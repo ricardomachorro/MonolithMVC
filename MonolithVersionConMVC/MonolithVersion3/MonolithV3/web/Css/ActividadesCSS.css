@@ -1,8 +1,55 @@
-.BandejaActividades{
-    background-color:#fff;
-    min-height:800px;
+.Señaladores{
+    height:110px;
     margin:12px;
+}
+
+#BarraResumenActividades{
+    margin:5px;
+}
+
+.Señaladores img{
+    height:72px;
+    width:72px;
+    margin:12px;
+}
+
+.Señaladores a{
+    margin-top:45px;
+    color:#fff;
+    font-size:32px;
+}
+
+.ContenedoresResumen{
     box-shadow:0px 0px 1px;
+    margin:1px;
+    margin-bottom:1px;
+    margin-top:1px;
+}
+
+#ActividadesHechas{
+    background-color:#fff9aa;
+}
+
+#ActividadesNoHechas{
+    background-color:#EF9A9A;
+}
+
+#ActividadesPendientes{
+    background-color:#9FA8DA;;
+}
+
+.ResumenActividadesImagenes{
+    height:40px;
+    width:40px;
+    margin-left:4px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.BandejaActividades{   
+    min-height:500px;
+    margin:0px;
+    box-shadow:1px 3px 3px;
 }
 
 .TituloContenedores{
@@ -36,6 +83,9 @@
       padding-left:13px;
 }
 .ActividadDiv{
+    max-width:100px;
+     min-width:100px;
+     width:100px;
     margin-right:8px;
     margin-left:8px;
     margin-top:8px;
@@ -81,7 +131,8 @@
 
 .BandejaLateral{
     min-height:800px;
-    margin:12px;
+    margin:17px;
+    box-shadow:1px 3px 3px;
 }
 
 .TituloLateralesContenedores{
@@ -100,6 +151,35 @@
     margin-bottom:40px;
 }
 
-#folderSeparador{
+.ImagenBarraLateral{
+    height:30px;
+    width:30px;
+    margin:12px;
+}
+
+.ContenedorLateralElementos{
+    height:250px;
+    background-color:#fff;
+    overflow-y:scroll;
+}
+
+.folderSeparador{
     background-color:#B07509;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+    background-color:#e9ecef;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background-color:#a6a6a6;
+   box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+   
+}
+
+::-webkit-scrollbar-track{
+    border-radius:10px;
+    
 }

@@ -1,15 +1,31 @@
-.BandejaGrupos{
-    background-color:#fff;
-    min-height:800px;
+.Señaladores{
+    height:110px;
     margin:12px;
-    box-shadow:0px 0px 1px;
+}
+
+.Señaladores img{
+    height:72px;
+    width:72px;
+    margin:12px;
+}
+
+.Señaladores a{
+    margin-top:45px;
+    color:#fff;
+    font-size:32px;
+}
+
+.BandejaActividades{   
+    min-height:500px;
+    margin:17px 0px 0px 0px;
+    box-shadow:1px 3px 3px;
 }
 
 .TituloContenedores{
     width:100%;
     height:120px;
     margin:0px;
-    background-color:#db99ef;
+    background-color:#18FFFF;
     color:#FFF;
     font-size:27px;
 }
@@ -17,7 +33,7 @@
 .TituloContenedores img{
     width:60px;
     height:60px;
-    margin-top:20px;
+    margin-top:25px;
     margin-bottom:40px;
 }
 
@@ -25,99 +41,74 @@
     width:100%;
     height:20px;
     margin:0px;
-    background-color:#8A4387;
+    background-color:#00838F;
 }
 
-.TituloGrupoContenedor{
-     padding:4px;
-     margin:7px;
-     overflow-y:scroll;
-     height:700px;
-}
-
-.TituloGrupoContenedor img{
-     height:30px;
-     width:30px;
-}
-
-.TituloGrupo{
-     background-color:#db99ef;
-     height:60px;
-}
-
-#PuntoReunion{
-   padding:12px;
-   background-color:#db99ef;
-   margin:12px;    
-}
-
-#NuevoMiembro{
-    width:100%;
-    height:40px;
-}
-
-#BotonAgregarMiembro{
+#BotonAgregarActividad{
     height:40px;
     padding-top:8px;
      padding-bottom:12px;
      padding-left:3px;
       padding-left:13px;
 }
-
-.TareaDiv{
-    margin-right:4px;
-    margin-left:4px;
+.ActividadDiv{
+    max-width:100px;
+     min-width:100px;
+     width:100px;
+    margin-right:8px;
+    margin-left:8px;
     margin-top:8px;
     font-size:22px;
-    color:#8A4387;
-    background-color:#eec2fc;
+    color:#4c8448;
+    background-color:#c3f7de;
     font-weight:bold;
 }
 
-.SeccionesTarea{
+.SeccionesActividad{
     padding:4px;
 }
 
-.ContenedorSeccionesTarea{
+.ContenedorSeccionesActividad{
     padding:9px;
 }
 
-.EliminarTarea{
+.EliminarActividad{
     background-color:#ef7775;
     margin:0px;
     color:#fff;
     padding-right:12px;
 }
 
-.EliminarTarea img{
+.EliminarActividad img{
     height:20px;
     margin:5px;
     height:20px;
 }
 
-.GuardarTarea{
+.GuardarActividad{
      background-color:#52a5b2;
     margin:0px;
     color:#fff;
     padding-right:12px;
 }
 
-.GuardarTarea img{
+.GuardarActividad img{
      height:20px;
     margin:5px;
     height:20px;
 }
 
 .BandejaLateral{
-    min-height:800px;
-    margin:12px;
+    min-height:75%;
+    margin:17px;
+    box-shadow:1px 3px 3px;
 }
 
 .TituloLateralesContenedores{
     width:100%;
     height:120px;
     margin:0px;
-    background-color:#EBC98A;
+    background-color:#F06292;
     color:#FFF;
     font-size:27px;
 }
@@ -129,9 +120,38 @@
     margin-bottom:40px;
 }
 
-.SeparadorTituloContendoresLateral{
+.ImagenBarraLateral{
+    height:30px;
+    width:30px;
+    margin:12px;
+}
+
+.ContenedorLateralElementos{
+    padding-top: 5%;
+    height:250px;
+    background-color:#fff;
+    overflow-y:scroll;
+}
+#folderSeparador{
+    background-color:#B07509;
     width:100%;
     height:20px;
     margin:0px;
-    background-color:#B07509;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+    background-color:#e9ecef;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background-color:#a6a6a6;
+   box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+   
+}
+
+::-webkit-scrollbar-track{
+    border-radius:10px;
+    
 }
