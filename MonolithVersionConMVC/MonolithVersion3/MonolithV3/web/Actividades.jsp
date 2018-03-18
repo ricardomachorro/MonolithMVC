@@ -21,7 +21,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.validate.js"></script>
     </head>
-    <body style="background-color:#FAFAFA">
+    <body style="background-color:#FAFAFA" >
         <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,11 +55,10 @@
                 </ul>
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="row" >
-                <div class="col-lg-8 col-md-8 col-sm-12">
-
-                    <div class="row" style="margin:12px;">                       
+        <div class="container-fluid" >
+            <div class="row" style="margin:0px;padding:0px;">
+                <div class="col-lg-10 col-md-10 col-sm-12" >
+                    <div class="row">                       
                         <div class="col-12" >
                             <div class="row" id="BarraResumenActividades">
 
@@ -100,7 +99,7 @@
                         </div>
                     </div>
 
-                    <div class="row BandejaActividades">
+                    <div class="row BandejaActividades" style="margin:0px;padding:0px;">
                         <div class="col-12 ">
                             <div class="row">
                                 <div class="col-12 TituloContenedores">
@@ -118,7 +117,7 @@
                                 <div class="col-12 SeparadorTituloContendores">
                                 </div>
                             </div>
-                            <div class="row" style="overflow-y:scroll;height:500px;background-color:#fff;">
+                            <div class="row" style="overflow-y:scroll;height:100%;background-color:#fff;">
                                 <div class="col-12" >
                                     <div class="row" style="margin:32px;padding:0">
                                         <div class=" col-lg-10 col-md-10 col-sm-7">
@@ -129,78 +128,13 @@
                                         </div>
                                     </div>
 
-
-
-                                    <div class="row" style="height:70px;">
-                                        <div class="col-12">
-                                            <div class="row" style="background-color:#8ca5cc;margin:2px;" >
-                                                <div class="col-12">
-                                                    <div class="row">
-                                                        <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
-                                                            <label>Titulo</label>
-                                                        </div>
-                                                        <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
-                                                            <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Fecha</label>
-                                                        </div>
-                                                        <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
-                                                            <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
-                                                        </div>
-                                                        <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
-                                                            <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Localizacion</label>
-                                                        </div>
-                                                        <div class="col-sm-4 col-md-4 col-lg-4"style="padding-top:10px;">
-                                                            <input type="checkbox" class="float-right" style="height:40px;width:20px;">
-                                                        </div>
-                                                    </div>
-                                                   
-                                                    
-                                                </div>
-                                            </div>
-                                            <div class="row" style="background-color:#8ca5cc;margin:2px;" > 
-                                                <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
-                                                    <label>Titulo</label>
-                                                </div>
-                                                <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
-                                                    <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Fecha</label>
-                                                </div>
-                                                <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
-                                                    <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
-                                                </div>
-                                                <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:12px;">
-                                                    <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
-                                                </div>
-                                                <div class="col-sm-4 col-md-4 col-lg-4"style="padding-top:10px;">
-                                                    <input type="checkbox" class="float-right" style="height:40px;width:20px;">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!--
-                                        <div class="col-sm-12 col-md-5 col-lg-5" style="background-color:#8ca5cc;margin:2px;" >
-                                            <label>Titulo</label>
-                                            <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Fecha</label>
-                                            <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
-                                            <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;"><label>Categoria</label>
-                                            <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>
-                                        
-                                        <div class="col-sm-12  col-md-5 col-lg-5" style="background-color:#8ca5cc;margin:2px;" >
-                                            <img src="img/id-card.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7PX;">Titulo
-                                            <img src="img/calendar-with-spring-binder-and-date-blocks.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Fecha
-                                            <img src="img/folder-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Categoria
-                                            <img src="img/location-blue-task.svg" style="width:25px;height:25px;margin-right:7PX;margin-left:7px;">Categoria
-                                            <input type="checkbox" class="float-right" style="height:40px;width:20px;margin:0">
-                                        </div>-->
-                                    </div>
-
-
                                 </div>
                             </div>
                         </div>
                     </div>  
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-12" >
+                <div class="col-lg-2 col-md-2 col-sm-12" style="margin:0px;padding:0px;border-right-width:8px;border-right-color:#8ca5cc;">
                     <div class="row BandejaLateral" >
                         <div class="col-12 ">
                             <div class="row">

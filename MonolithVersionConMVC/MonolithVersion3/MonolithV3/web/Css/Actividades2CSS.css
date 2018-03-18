@@ -1,0 +1,179 @@
+body{
+    background-color:#e9ecef;
+}
+
+.container-fluid{
+    margin-bottom:20px;
+}
+.CartasResumenActividades{
+    margin:10px;
+}
+
+.TextoCartasResumenActividades{
+    margin-top:8px;
+}
+
+.ImagenesResumenActividades{
+    height:40px;
+    width:40px;
+}
+
+.TituloContenedores{
+    width:100%;
+    height:120px;
+    margin:0px;
+    background-color:#77c496;
+    color:#FFF;
+    font-size:27px;
+    border-bottom-color:#4e8464;
+    border-bottom-width:20px;
+}
+
+.SeparadorTituloContendores{
+    height:20px;
+    margin:0px;
+    background-color:#4e8464;
+}
+.TituloContenedores img{
+    width:60px;
+    height:60px;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+
+.BandejaActividades{
+    overflow-y:scroll;
+    height:925px;
+    margin:0px;
+    background-color:#fff;
+    border-color:#8ca5cc;
+}
+
+
+
+.ContenedorNuevaActivity{
+   margin:32px;
+    padding:0;
+}
+
+#BotonNuevaActividad{
+    background-color:#0062cc;
+    height:40px;
+    width:100%;
+}
+
+#BotonNuevaActividad img{
+    height:20px;
+    margin:8px;
+}
+.BotonesActividad{
+    background-color:#95db9c;
+    border-radius:8px;
+}
+
+.BotonesActividad img{
+   height:25px;
+   width:25px;
+   margin:6px;
+}
+
+
+.CartasActividades{
+    margin-top:8px;
+    margin-bottom:8px;
+    background-color:#ddeaff;
+}
+
+.CartasActividades input[type='checkbox']{
+    height:25px;
+    width:25px;
+}
+
+.CartasActividades input[type='text']{
+   margin:5px;
+}
+
+
+.CartasActividades button{
+    margin:3px;
+    border-radius:8px;
+}
+
+.CartasActividades img{
+   height:25px;
+   width:25px;
+   margin:6px;
+}
+
+#BotonEliminar{
+    background-color:#fcc7c7;
+    border-width:0px;
+}
+
+#BotonGuardar{
+    background-color:#c6fffb;
+    border-width:0px;
+}
+
+#BotonLocalizacion{
+    background-color:#f4ffc6;
+    border-width:0px;
+}
+
+.TituloLateralesContenedores{
+    width:100%;
+    height:120px;
+    margin:0px;
+    margin-top:7px;
+    background-color:#EBC98A;
+    color:#FFF;
+    font-size:27px;
+}
+
+.TituloLateralesContenedores img{
+    width:60px;
+    height:60px;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+
+.ImagenBarraLateral{
+    height:30px;
+    width:30px;
+    
+}
+
+.ContenedorLateralElementos{
+    min-height:350px;
+    height:280px;
+    max-height:1200px;
+    background-color:#fcf0e3;
+    overflow-y:scroll;
+    margin:0px;
+}
+#folderSeparador{
+    background-color:#B07509;
+}
+
+.ContenedorLateralElementos li{
+    margin-top:12px;
+    margin-bottom:12px;
+}
+::-webkit-scrollbar{
+    width:8px;
+    background-color:#e9ecef;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background-color:#a6a6a6;
+   box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+   
+}
+
+::-webkit-scrollbar-track{
+    border-radius:10px;
+    
+}
+
+

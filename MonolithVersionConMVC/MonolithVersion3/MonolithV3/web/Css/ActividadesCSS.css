@@ -1,3 +1,12 @@
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container-fluid,
+.row-fluid { height: inherit; }
+
 .Señaladores{
     height:110px;
     margin:12px;
@@ -11,6 +20,7 @@
     height:72px;
     width:72px;
     margin:12px;
+    background-color:#4c8448;
 }
 
 .Señaladores a{
@@ -47,8 +57,6 @@
 }
 
 .BandejaActividades{   
-    min-height:500px;
-    margin:0px;
     box-shadow:1px 3px 3px;
 }
 
@@ -130,9 +138,9 @@
 }
 
 .BandejaLateral{
-    min-height:800px;
-    margin:17px;
-    box-shadow:1px 3px 3px;
+   height:100%;
+    margin:0px;
+   
 }
 
 .TituloLateralesContenedores{
@@ -158,9 +166,12 @@
 }
 
 .ContenedorLateralElementos{
-    height:250px;
-    background-color:#fff;
+    min-height:350px;
+    height:580px;
+    max-height:1200px;
+    background-color:#fcf0e3;
     overflow-y:scroll;
+    margin:18px;
 }
 #folderSeparador{
     background-color:#B07509;
