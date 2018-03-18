@@ -1,2 +1,0 @@
-Seguridad.CodigoAscii
-Seguridad.CambioConversion
