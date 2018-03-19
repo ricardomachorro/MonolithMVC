@@ -7,8 +7,8 @@ import java.sql.Date;
 public class Actividad {
     
     private String Titulo;
-    private String FormadeEntregar;
-    private String  Descripcion;
+    private String  Categoria;
+    //private String Localizacion;
     private Date FechaLimite; 
     private String Estado;
     private String Usuario;
@@ -29,22 +29,16 @@ public class Actividad {
         this.Titulo = Titulo;
     }
 
-    public String getFormadeEntregar() {
-        return FormadeEntregar;
+    public String getCategoria() {
+        return Categoria;
     }
 
-    public void setFormadeEntregar(String FormadeEntregar) {
-        this.FormadeEntregar = FormadeEntregar;
+    public void setCategoria(String Categoria) {
+        this.Categoria = Categoria;
     }
 
-    public String getDescripcion() {
-        return Descripcion;
-    }
-
-    public void setDescripcion(String Descripcion) {
-        this.Descripcion = Descripcion;
-    }
-
+   
+    
     public Date getFechaLimite() {
         return FechaLimite;
     }

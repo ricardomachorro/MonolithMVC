@@ -1,18 +1,31 @@
 create database MonolithV2;
+/*drop database MonolithV2;*/
 use MonolithV2;
 
 create table Localizacion(IDLocalizacion int auto_increment primary key not null,
 Nombre varchar (100),
-Latitud varchar(40) not null, 
-Longitud varchar (40) not null,
-Region varchar (100) not null);
+Latitud varchar(40) /*not null*/, 
+Longitud varchar (40)/* not null*/,
+Region varchar (100) /*not null*/);
 
 create table Usuario(IDUsuario int auto_increment primary key not null,
-Correo varchar(100) not null,
-edad int not null,
-IDLocalizacion  int not null,
-Puntos int not null,
-foreign key (IDLocalizacion) references Localizacion(IDLocalizacion));
+NombreUsuario varchar(100),
+Institucion varchar(120),
+Correo  varchar(70),
+Edad int,
+NivelEstudio varchar(40),
+Pais varchar(50),
+Direccion varchar(200),
+Contrasena varchar(70),
+Autenticado varchar (70),
+Puntos int not null);
+
+create table Validacion(
+IdAdendum int primary key not null auto_increment,
+Nombre varchar(20) not null,
+adendum varchar (50) not null
+);
+
 
 create table Categoria(IDCategoria int auto_increment not null primary key,
 NombreCategoria varchar(100) not null,
@@ -23,10 +36,10 @@ create table Actividad(IDActividad int not null primary key auto_increment,
 Nombre varchar(40),
 Fecha date,
 IDCategoria int,
-IDLocalizacion int,
+/*IDLocalizacion int,*/
 Estado boolean,
-foreign key (IDCategoria) references Categoria(IDCategoria),
-foreign key (IDLocalizacion) references Localizacion(IDLocalizacion));
+foreign key (IDCategoria) references Categoria(IDCategoria)/*,
+foreign key (IDLocalizacion) references Localizacion(IDLocalizacion)*/);
 
 create table Grupo(IDGrupo int not null primary key auto_increment,
 Nombre varchar(100) not null,

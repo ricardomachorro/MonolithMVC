@@ -7,7 +7,7 @@ import Objetos.*;
 public class DataBase {
 
     String driver = "com.mysql.jdbc.Driver";
-    String ruta = "jdbc:mysql://localhost/monolith";
+    String ruta = "jdbc:mysql://localhost/MonolithV2";
     String usuario = "root";
     String clave = "n0m3l0";
     Connection c = null;
@@ -23,7 +23,7 @@ public class DataBase {
     }
 
     public void IngresarUsuario(Usuario usr) throws SQLException {
-        String sql = "insert into Usuario(NombreUsuario,Institucion,NivelEstudio,Direccion,Correo, Edad, Pais, Contrasena,Autenticado) values (?,?,?,?,?,?,?,?,?);";
+        String sql = "insert into Usuario(NombreUsuario,Institucion,NivelEstudio,Direccion,Correo, Edad, Pais, Contrasena,Autenticado,Puntos) values (?,?,?,?,?,?,?,?,?,?);";
         String sql2= "";
         ps = c.prepareStatement(sql);
         ps.setString(1, usr.getNombre());
@@ -35,6 +35,7 @@ public class DataBase {
         ps.setString(7, usr.getPais());
         ps.setString(8, usr.getPassword());
         ps.setString(9, "No");
+        ps.setInt(10,0);
         ps.execute();
         c.close();
     }
@@ -67,7 +68,45 @@ public class DataBase {
         ps.execute();
         c.close();
     }
+    
+    
+    
+    public boolean IngresarActividad(Actividad act) throws SQLException {
+        boolean exito=true;
+        String sql1 = "select * from Categoria where NombreCategoria=?";
+        String sql2 = "insert into Actividad(Titulo,IDUsuario,Estado,IDCategoria) values (?,?,?,?);";
+        int idUsuario= ConsultarUsuario(act.getUsuario());
+        if(idUsuario!=0){
+             ps=c.prepareStatement(sql1);
+             ps.setString(1,act.getCategoria());
+             ResultSet rs1=ps.executeQuery();
+             if(rs1.next()){
+                 int IDCategoria=rs1.getInt("IDCategoria");
+                 ps=c.prepareStatement(sql2);
+                 ps.setString(1,act.getTitulo());
+                 ps.setInt(2,idUsuario);
+                 ps.setBoolean(3,false);
+                 ps.setInt(4, IDCategoria);
+                 
+             }else{
+                 String sql3="insert into Categoria(Nombre,IDUsario) values(?,?)";
+                 ps=c.prepareStatement(sql3);
+                 ps.setString(1,act.getCategoria());
+                 ps.setInt(2,idUsuario);
+                 int IDCategoria=rs1.getInt("IDCategoria");
+                 ps=c.prepareStatement(sql2);
+                 ps.setString(1,act.getTitulo());
+                 ps.setInt(2,idUsuario);
+                 ps.setBoolean(3,false);
+                 ps.setInt(4, IDCategoria);
+             }
+        }
+        ps.execute();
+        c.close();
+        return exito;
+    }
 
+    /*
     
     public void IngresarActividad(Actividad act) throws SQLException {
         String sql = "insert into actividad(Titulo,FormaDeEntregar,Descripcion,IDUsuario,FechaLimite,Estado) values (?,?,?,?,?,?);";
@@ -116,7 +155,7 @@ public class DataBase {
         ps = c.prepareStatement(sql);
         ps.execute();
         c.close();
-    }
+    }*/
      
      public void CambiarExamenFinalizado(String id) throws SQLException {
         int identic = Integer.parseInt(id);

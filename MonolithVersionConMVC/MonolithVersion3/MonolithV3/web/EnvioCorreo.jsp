@@ -45,7 +45,7 @@
 
             try {
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                c = DriverManager.getConnection("jdbc:mysql://localhost/monolith", "root", "n0m3l0");
+                c = DriverManager.getConnection("jdbc:mysql://localhost/MonolithV2", "root", "n0m3l0");
                 sta = c.createStatement();
             } catch (SQLException error) {
                 out.print(error.toString());

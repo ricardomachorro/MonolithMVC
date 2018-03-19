@@ -11,7 +11,7 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.validate.js"></script>
-
+        
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
@@ -50,7 +50,7 @@
         <div class="container-fluid">
             <div class="row">
                 <!--Contenedor Principal-->
-                <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="col-lg-8 col-md-12 col-sm-12">
                     <!--Contenedro de Resumen-->
                     <div class="card-deck">
                         <div class="card CartasResumenActividades" >
@@ -115,14 +115,16 @@
                         <div class="card" >
                             <div class="card-body">
                                 <!--Seccion Nueva Actividad-->
+                                <form action="" method="Post" >
                                 <div class="row SeccionNuevaActividad" >
                                     <div class="col-lg-8 col-md-6 col-sm-12">
                                         <input type="text" class="form-control" placeholder="Nueva Actividad" >
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <button class="btn-primary" >Agregar Actividad<img src="img/add-square-button.svg" ></button>  
+                                        <button class="btn-primary" type="submit" id="NuevaActividadBtn" >Agregar Actividad<img src="img/add-square-button.svg" ></button>  
                                     </div>
                                 </div>
+                                </form>
                                 <!--Fin Seccion Nueva Actividad-->
 
 
@@ -141,6 +143,7 @@
                                                             <input class="CheckBoxActividades float-right" type="checkbox">
                                                         </div>
                                                     </div>
+                                                    <!--
                                                     <div class="row OpccionesAcividad" >
                                                         <div class="col-lg-3 col-md-4 col-sm-4">
                                                             <input class="form-control"  type="text" placeholder="Nombre Activdad">
@@ -162,7 +165,7 @@
                                                                 <img src="img/placeholderWhite.svg">
                                                             </button>
                                                         </div>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                             </div>
                                         </div>
@@ -226,7 +229,7 @@
                 </div>
                 <!--Fin Contenedor Principal-->
                 <!--Contenedor Lateral-->
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                     <div class="card-deck">
                         <div class="card ContenedoresLaterales"  >
                             <div class="card-body" >
@@ -306,7 +309,8 @@
         </div>
         <script>
             $(".ActividadCarta").click(function(){
-            $(this).append("<div class='row OpccionesAcividad' >\n\
+              $(".OpccionesActividad").empty(); 
+            $(this).append("<div class='row OpccionesActividad ' >\n\
         <div class='col-lg-3 col-md-4 col-sm-4'>\n\
         <input class='form-control'  type='text' placeholder='Nombre Activdad'>\n\
         </div>\n\
@@ -328,9 +332,8 @@
             
                     
                        );
-                $(this).remove("ActividadActiva");
-              $(this).addClass("ActividadActiva");
-              
+               
+                
                         });
                         </script>
     </body>

@@ -15,10 +15,10 @@ import Seguridad.*;
 
 public class ServerCliente {
     //Parametros a cambiar===
-    static final String HOST1 = "192.168.0.5"; //Parametro para el servidor de el proyecto de KerberosServer
+    static final String HOST1 = "192.168.0.4"; //Parametro para el servidor de el proyecto de KerberosServer
     static final int PUERTO1 = 3000;
     
-    static final String HOST2 = "192.168.0.5";//Parametro para el servidor de el proyecto de PermisosServer
+    static final String HOST2 = "192.168.0.4";//Parametro para el servidor de el proyecto de PermisosServer
     static final int PUERTO2 = 4000;
     //===
     ObjectOutputStream alServidor;

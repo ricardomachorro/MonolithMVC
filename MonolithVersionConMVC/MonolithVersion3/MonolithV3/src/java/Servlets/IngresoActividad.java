@@ -61,15 +61,12 @@ public class IngresoActividad extends HttpServlet {
         try {
             Actividad act=new Actividad();
             HttpSession sesion = request.getSession();
-            String nombre=request.getParameter("Titulo");
-            String entrega=request.getParameter("FormaEntrega");
-            String descripcion=request.getParameter("Descripcion");
+            String NombreActividad=request.getParameter("Titulo");
             String Fecha=request.getParameter("FechaEntrega");
-            act.setTitulo(nombre);
-            act.setFormadeEntregar(entrega);
+            act.setTitulo(NombreActividad);
             act.setFechaLimite(java.sql.Date.valueOf(Fecha));
             act.setUsuario(sesion.getAttribute("usuario").toString());
-            act.setDescripcion(descripcion);
+            act.setCategoria(request.getParameter("Categoria"));
              db.IngresarActividad(act);
             response.sendRedirect("Actividades.jsp");
             
