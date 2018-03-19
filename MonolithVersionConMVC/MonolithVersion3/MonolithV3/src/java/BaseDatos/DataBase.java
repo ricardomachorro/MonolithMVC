@@ -68,9 +68,7 @@ public class DataBase {
         ps.execute();
         c.close();
     }
-    
-    
-    
+      
     public boolean IngresarActividad(Actividad act) throws SQLException {
         boolean exito=true;
         String sql1 = "select * from Categoria where NombreCategoria=?";

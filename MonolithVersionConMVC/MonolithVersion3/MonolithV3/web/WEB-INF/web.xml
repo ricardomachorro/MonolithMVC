@@ -7,6 +7,16 @@
         <servlet-name>Ingreso</servlet-name>
         <url-pattern>/Ingreso</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>IngresoUsuario</servlet-name>
+        <servlet-class>Servlets.IngresoUsuario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IngresoUsuario</servlet-name>
+        <url-pattern>/IngresoUsuario</url-pattern>
+    </servlet-mapping>
+    
     <servlet>
         <servlet-name>CambiosUsuarios</servlet-name>
         <servlet-class>Servlets.CambiosUsuarios</servlet-class>
