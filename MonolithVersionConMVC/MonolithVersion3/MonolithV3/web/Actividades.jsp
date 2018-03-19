@@ -11,6 +11,7 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.validate.js"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
@@ -91,93 +92,246 @@
                         </div>
                     </div>
                     <!--Fin Contenedor de Resumen-->
+                    <!--Bandeja Actividad Principal-->
+
+                    <!--Titulo Bandeja-->
                     <div class="card-deck">
                         <div class="card" >
-                            <h5 class="card-title TituloContenedores">Bandeja Principal de Actividades <img class="float-right" src="img/copy.svg" ></h5>
                             <div class="card-body">
-                                <div class="row" style="margin:32px;padding:0">
-                                    <div class=" col-lg-10 col-md-10 col-sm-7">
-                                        <input type="text" class="form-control" placeholder="Nueva Actividad" width="100%">  
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-8 col-lg-8">
+                                        <h1>Bandeja Principal de Actividades</h1>
                                     </div>
-                                    <div class="col-md-2 col-lg-2 col-sm-5">
-                                        <button class="btn-primary" style="background-color:#0062cc;height:40px;width:100%;">Add<img src="img/add-square-button.svg" style="height:20px;margin:8px;"></button>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <img id="ImagenBandejaPrincipal" class="float-right" src="img/copy.svg">
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin Titulo Bandeja-->
+
+                    <div class="card-deck">
+                        <div class="card" >
+                            <div class="card-body">
+                                <!--Seccion Nueva Actividad-->
+                                <div class="row SeccionNuevaActividad" >
+                                    <div class="col-lg-8 col-md-6 col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Nueva Actividad" >
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <button class="btn-primary" >Agregar Actividad<img src="img/add-square-button.svg" ></button>  
+                                    </div>
+                                </div>
+                                <!--Fin Seccion Nueva Actividad-->
+
+
+                                <!--Bandeja Actividades-->
                                 <div class="row BandejaActividades">
                                     <div class="col-12">
+                                        <!--Actividad Abierta-->
                                         <div class="card-deck">
-                                            <div class="card">
-                                                <h5 class="card-title">nombre Actividad:Actividad1     Fecha:16/03/2018   Localización:dsfdffds</h5>
+                                            <div class="card ActividadCarta ActividadActiva" >
                                                 <div class="card-body">
-                                                    
+                                                    <div class="row " >
+                                                        <div class="col-10">
+                                                            <h5>Nombre Actividad:Actividad1     Fecha:16/03/2018   Localización:dsfdffds</h5>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="CheckBoxActividades float-right" type="checkbox">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row OpccionesAcividad" >
+                                                        <div class="col-lg-3 col-md-4 col-sm-4">
+                                                            <input class="form-control"  type="text" placeholder="Nombre Activdad">
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-4 col-sm-4">
+                                                            <input class="form-control"  type="text" placeholder="Fecha Activdad">
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-4 col-sm-4">
+                                                            <input class="form-control" type="text" placeholder="Categoria">
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-12 col-sm-12">
+                                                            <button id="BtnGuardar" class="btn-primary float-right btn-activity">
+                                                                <img src="img/save.svg">
+                                                            </button>
+                                                            <button id="BtnEliminar" class="btn-primary float-right btn-activity">
+                                                                <img src="img/garbageWhite.svg">
+                                                            </button>
+                                                            <button id="BtnLocal" class="btn-primary float-right btn-activity">
+                                                                <img src="img/placeholderWhite.svg">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Fin Actividad Abierta-->
+                                        <!--Actividad Normal 1-->
+                                        <div class="card-deck">
+                                            <div class="card ActividadCarta" >
+
+                                                <div class="card-body">
+                                                    <div class="row " >
+                                                        <div class="col-10">
+                                                            <h5>Nombre Actividad:Actividad1     Fecha:16/03/2018   Localización:dsfdffds</h5>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="CheckBoxActividades float-right" type="checkbox">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Fin Actividad Abierta 1-->
+                                        <div class="card-deck">
+                                            <div class="card ActividadCarta" >
+
+                                                <div class="card-body">
+                                                    <div class="row " >
+                                                        <div class="col-10">
+                                                            <h5>Nombre Actividad:Actividad1     Fecha:16/03/2018   Localización:dsfdffds</h5>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="CheckBoxActividades float-right" type="checkbox">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card-deck">
+                                            <div class="card ActividadCarta" >
+
+                                                <div class="card-body">
+                                                    <div class="row " >
+                                                        <div class="col-10">
+                                                            <h5>Nombre Actividad:Actividad1     Fecha:16/03/2018   Localización:dsfdffds</h5>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <input class="CheckBoxActividades float-right" type="checkbox">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!--Fin Bandeja Actividades-->
                             </div>
                         </div>
                     </div>
+                    <!--Fin Bandeja Actividad Principal-->
                 </div>
                 <!--Fin Contenedor Principal-->
                 <!--Contenedor Lateral-->
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="row TituloLateralesContenedores">
-                        <div class="col-12 ">
-                            <div class="row">
-                                <div class="col-8" style="padding-top:40px;">
-                                    <a>Categoria</a>
-                                </div> 
-                                <div class="col-4">
-                                    <img class="float-right" src="img/folderOrange.svg" ><!--E3A229-->
-                                </div> 
+                    <div class="card-deck">
+                        <div class="card ContenedoresLaterales"  >
+                            <div class="card-body" >
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-8 col-lg-8">
+                                        <h1>Categorias</h1>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <img class="float-right" src="img/folderOrange.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card ListasLaterales"  >
+                            <div class="card-body" >
+                                <ul>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+                                    <li><img src="img/folderOrange.svg">asssa</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card ContenedoresLaterales"  >
+                            <div class="card-body" >
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-8 col-lg-8">
+                                        <h1>Localizaciones</h1>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-4">
+                                        <img class="float-right" src="img/placeholder.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card ListasLaterales"  >
+                            <div class="card-body" >
+                                <ul>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>
+                                    <li><img src="img/placeholder.svg">asssa</li>    
+                                </ul>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="row ContenedorLateralElementos">
-                        <div class="col-12 ">
-                            <ul>
-                                <li><img src="img/folderOrange.svg" class="ImagenBarraLateral" >Categoria 1</li>
-                                <li><img src="img/folderOrange.svg" class="ImagenBarraLateral">Categoria 1</li>
-                                <li><img src="img/folderOrange.svg" class="ImagenBarraLateral">Categoria 1</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!--Titulo Localizaciones-->
-                    <div class="row">
-                        <div class="col-12 TituloLateralesContenedores">
-                            <div class="row">
-                                <div class="col-8" style="padding-top:40px;">
-                                    <a>Localizaciones</a>
-                                </div> 
-                                <div class="col-4">
-                                    <img class="float-right" src="img/placeholder.svg" ><!--E3A229-->
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                    <!--Fin Titulo Localizaciones -->
 
-                    <!--Localizaciones-->
-                    <div class="row">
-                        <div class="col-12 ContenedorLateralElementos" >
-                            <ul>
-                                <li><img src="img/placeholder.svg" class="ImagenBarraLateral" >Categoria 1</li>
-                                <li><img src="img/placeholder.svg" class="ImagenBarraLateral">Categoria 1</li>
-                                <li><img src="img/placeholder.svg" class="ImagenBarraLateral">Categoria 1</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <!--Fin Localizaciones-->
                 </div>
                 <!--Fin Contenedor Lateral-->
 
 
             </div>
         </div>
+        <script>
+            $(".ActividadCarta").click(function(){
+            $(this).append("<div class='row OpccionesAcividad' >\n\
+        <div class='col-lg-3 col-md-4 col-sm-4'>\n\
+        <input class='form-control'  type='text' placeholder='Nombre Activdad'>\n\
+        </div>\n\
+        <div class='col-lg-3 col-md-4 col-sm-4'>\n\
+        <input class='form-control'  type='text' placeholder='Fecha Activdad'>\n\
+        </div>\n\
+        <div class='col-lg-3 col-md-4 col-sm-4'>\n\
+        <input class='form-control' type='text' placeholder='Categoria'>\n\
+        </div>\n\
+        <div class='col-lg-3 col-md-12 col-sm-12'>\n\
+            <button id='BtnGuardar' class='btn-primary float-right btn-activity'>\n\
+            <img src='img/save.svg'>\n\
+            </button>\n\
+            <button id='BtnEliminar' class='btn-primary float-right btn-activity'>\n\
+            <img src='img/garbageWhite.svg'>\n\
+            </button>\n\
+            <button id='BtnLocal' class='btn-primary float-right btn-activity'>\n\
+            <img src='img/placeholderWhite.svg'> </button></div></div>"
+            
+                    
+                       );
+                $(this).remove("ActividadActiva");
+              $(this).addClass("ActividadActiva");
+              
+                        });
+                        </script>
     </body>
 </html>
