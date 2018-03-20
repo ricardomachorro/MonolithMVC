@@ -1,31 +1,24 @@
+
 package Servlets;
 
 import BaseDatos.Database2;
 import Objetos.Usuario;
-import java.io.*;
-import java.net.InetAddress;
-import java.sql.SQLException;
+import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-
-
-
-@WebServlet(name = "IngresoUsuario", urlPatterns = {"/IngresoUsuario"})
-public class IngresoUsuario extends HttpServlet {
+@WebServlet(name = "IngresoPrograma", urlPatterns = {"/IngresoPrograma"})
+public class IngresoPrograma extends HttpServlet {
     
     private String Nombre;
-    private String Correo;
-    private String Password;
-    private int Edad;
-    private String Pais;
-    private String Direccion;
-  
+    private String Contraseña;
     
-    
-    
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
@@ -57,20 +50,12 @@ public class IngresoUsuario extends HttpServlet {
         try {
             Database2 db = new Database2();
             HttpSession sesion = request.getSession();   
-            Nombre=request.getParameter("nombre").toString();
-            Edad = Integer.parseInt(request.getParameter("edad").toString());
-            Pais = request.getParameter("pais").toString();
-            Direccion =request.getParameter("direccion").toString();
-            Correo = request.getParameter("correo").toString();
-            Password =  request.getParameter("contra").toString();
+            Nombre=request.getParameter("usuario").toString();
+            Contraseña =  request.getParameter("contrasenia").toString();
             u.setNombre(Nombre);
-            u.setEdad(Edad);
-            u.setPais(Pais);
-            u.setDireccion(Direccion);
-            u.setCorreo(Correo);
-            u.setPassword(Password);
-            if(db.IngresoUsuario(u)){
-                sesion.setAttribute("NombreUsuario", u.getNombre());
+            u.setPassword(Contraseña);
+            if(db.IngresoPrograma(u)){
+                sesion.setAttribute("usuario", u.getNombre());
                 sesion.setAttribute("password",u.getPassword());
                 response.sendRedirect("Actividades.jsp");
             }else{
@@ -90,3 +75,4 @@ public class IngresoUsuario extends HttpServlet {
     }
     
 }
+    

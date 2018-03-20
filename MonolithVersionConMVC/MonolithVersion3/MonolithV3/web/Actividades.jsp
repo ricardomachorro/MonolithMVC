@@ -1,5 +1,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%
+    HttpSession sesion = request.getSession();
+    String Usuario = sesion.getAttribute("usuario").toString();
+    String Password = sesion.getAttribute("password").toString();
+
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

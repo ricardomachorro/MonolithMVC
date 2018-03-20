@@ -4,20 +4,17 @@ use MonolithV2;
 
 create table Localizacion(IDLocalizacion int auto_increment primary key not null,
 Nombre varchar (100),
-Latitud varchar(40) /*not null*/, 
-Longitud varchar (40)/* not null*/,
-Region varchar (100) /*not null*/);
+Latitud varchar(40) not null, 
+Longitud varchar (40) not null,
+Region varchar (100) not null);
 
 create table Usuario(IDUsuario int auto_increment primary key not null,
 NombreUsuario varchar(100),
-Institucion varchar(120),
 Correo  varchar(70),
 Edad int,
-NivelEstudio varchar(40),
 Pais varchar(50),
 Direccion varchar(200),
 Contrasena varchar(70),
-Autenticado varchar (70),
 Puntos int not null);
 
 create table Validacion(
@@ -25,6 +22,8 @@ IdAdendum int primary key not null auto_increment,
 Nombre varchar(20) not null,
 adendum varchar (50) not null
 );
+
+select *from Usuario;
 
 
 create table Categoria(IDCategoria int auto_increment not null primary key,

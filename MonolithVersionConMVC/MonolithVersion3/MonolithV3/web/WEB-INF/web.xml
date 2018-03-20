@@ -18,6 +18,15 @@
     </servlet-mapping>
     
     <servlet>
+        <servlet-name>IngresoPrograma</servlet-name>
+        <servlet-class>Servlets.IngresoPrograma</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IngresoPrograma</servlet-name>
+        <url-pattern>/IngresoPrograma</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
         <servlet-name>CambiosUsuarios</servlet-name>
         <servlet-class>Servlets.CambiosUsuarios</servlet-class>
     </servlet>

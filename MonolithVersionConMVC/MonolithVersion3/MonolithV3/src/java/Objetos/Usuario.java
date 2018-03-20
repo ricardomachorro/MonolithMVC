@@ -12,6 +12,16 @@ public class Usuario {
     private String Direccion;
     private String Institucion;
     private String NivelEstudios;
+    private int Puntos;
+
+    public int getPuntos() {
+        return Puntos;
+    }
+
+    public void setPuntos(int Puntos) {
+        this.Puntos = Puntos;
+    }
+    
     
     
     public String getNombre() {
