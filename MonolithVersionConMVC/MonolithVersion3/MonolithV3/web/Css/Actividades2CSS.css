@@ -66,16 +66,16 @@ body{
   border-width:0;
   border-radius:30%;
   box-shadow:3px;
-  margin:8px;
+  margin:2px;
 }
 .btn-activity:target{
   background-color:#000;
 }
 
 .btn-activity img{
-    height:30px;
-    width: 30px;
-    margin:7px;
+    height:1px;
+    width:1px;
+    margin:1px;
 }
 
 #BtnGuardar{

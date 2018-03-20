@@ -1,10 +1,10 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%
+<%/*
     HttpSession sesion = request.getSession();
     String Usuario = sesion.getAttribute("usuario").toString();
     String Password = sesion.getAttribute("password").toString();
-
+     */
 %>
 <html>
     <head>
@@ -17,7 +17,7 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.validate.js"></script>
-       
+
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
@@ -45,8 +45,8 @@
                             <img src="img/user.svg" class="ImagenesBarraInicio" > Usuario
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="align-content:center;">
-                            <a class="dropdown-item" >Usuario: <% 
-                                out.println(Usuario);
+                            <a class="dropdown-item" >Usuario: <%/* 
+                                out.println(Usuario);*/
                                 %></a>
                             <a class="dropdown-item" href="CerrarSesion.jsp"><img src="img/enter.svg" class="ImagenesBarraInicio" > Cerrar Sesion</a>
                             <a class="dropdown-item" href="Configuracion.jsp"><img src="img/settings-work-tool.svg" class="ImagenesBarraInicio" >
@@ -124,7 +124,7 @@
                         <div class="card" >
                             <div class="card-body">
                                 <!--Seccion Nueva Actividad-->
-                                
+
                                 <div class="row SeccionNuevaActividad" >
                                     <div class="col-lg-8 col-md-6 col-sm-12">
                                         <input type="text" id="NuevaActividadtxt" class="form-control" placeholder="Nueva Actividad" >
@@ -133,7 +133,7 @@
                                         <button class="btn-primary" type="submit" id="NuevaActividadBtn" >Agregar Actividad<img src="img/add-square-button.svg" ></button>  
                                     </div>
                                 </div>
-                               
+
                                 <!--Fin Seccion Nueva Actividad-->
 
 
@@ -143,7 +143,7 @@
                                         <!--Actividad Abierta-->
                                         <div class="card-deck">
                                             <div class="card ActividadCarta ActividadActiva" >
-                                                <div class="card-body">
+                                                <div class="card-body" data-toggle="collapse" href="#Col1">
                                                     <div class="row " >
                                                         <div class="col-10">
                                                             <h5>Nombre Actividad:Actividad1     Fecha:16/03/2018   Localización:dsfdffds</h5>
@@ -152,38 +152,27 @@
                                                             <input class="CheckBoxActividades float-right" type="checkbox">
                                                         </div>
                                                     </div>
-                                                    <!--
-                                                    <div class="row OpccionesAcividad" >
-                                                        <div class="col-lg-3 col-md-4 col-sm-4">
+
+                                                    <div class="collapse row OpccionesAcividad" id="Col1" >
+                                                        <form class="form-inline">
                                                             <input class="form-control"  type="text" placeholder="Nombre Activdad">
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-sm-4">
                                                             <input class="form-control"  type="text" placeholder="Fecha Activdad">
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-4 col-sm-4">
                                                             <input class="form-control" type="text" placeholder="Categoria">
-                                                        </div>
-                                                        <div class="col-lg-3 col-md-12 col-sm-12">
-                                                            <button id="BtnGuardar" class="btn-primary float-right btn-activity">
-                                                                <img src="img/save.svg">
-                                                            </button>
-                                                            <button id="BtnEliminar" class="btn-primary float-right btn-activity">
-                                                                <img src="img/garbageWhite.svg">
-                                                            </button>
-                                                            <button id="BtnLocal" class="btn-primary float-right btn-activity">
-                                                                <img src="img/placeholderWhite.svg">
-                                                            </button>
-                                                        </div>
-                                                    </div>-->
+                                                            <div class="btn-group btn-group-sm  btn-activity" role="group" >
+                                                                <button type="button" class="btn btn-secondary"><img src="img/save.svg"></button>
+                                                                <button type="button" class="btn btn-secondary"> <img src="img/garbageWhite.svg"></button>
+                                                                <button type="button" class="btn btn-secondary"><img src="img/placeholderWhite.svg"></button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!--Fin Actividad Abierta-->
                                         <!--Actividad Normal 1-->
                                         <div class="card-deck">
-                                            <div class="card ActividadCarta" >
-
-                                                <div class="card-body">
+                                            <div class="card ActividadCarta ActividadActiva" >
+                                                <div class="card-body" data-toggle="collapse" href="#Col2">
                                                     <div class="row " >
                                                         <div class="col-10">
                                                             <h5>Nombre Actividad:Actividad1     Fecha:16/03/2018   Localización:dsfdffds</h5>
@@ -191,6 +180,19 @@
                                                         <div class="col-2">
                                                             <input class="CheckBoxActividades float-right" type="checkbox">
                                                         </div>
+                                                    </div>
+
+                                                    <div class="collapse row OpccionesAcividad" id="Col2" >
+                                                        <form class="form-inline">
+                                                            <input class="form-control"  type="text" placeholder="Nombre Activdad">
+                                                            <input class="form-control"  type="text" placeholder="Fecha Activdad">
+                                                            <input class="form-control" type="text" placeholder="Categoria">
+                                                            <div class="btn-group btn-group-sm  btn-activity" role="group" >
+                                                                <button type="button" class="btn btn-secondary"><img src="img/save.svg"></button>
+                                                                <button type="button" class="btn btn-secondary"> <img src="img/garbageWhite.svg"></button>
+                                                                <button type="button" class="btn btn-secondary"><img src="img/placeholderWhite.svg"></button>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -317,56 +319,30 @@
             </div>
         </div>
         <script>
-            $(".ActividadCarta").click(function(){
-              $(".OpccionesActividad").empty(); 
-            $(this).append("<div class='row OpccionesActividad ' >\n\
-        <div class='col-lg-3 col-md-4 col-sm-4'>\n\
-        <input class='form-control'  type='text' placeholder='Nombre Activdad'>\n\
-        </div>\n\
-        <div class='col-lg-3 col-md-4 col-sm-4'>\n\
-        <input class='form-control'  type='text' placeholder='Fecha Activdad'>\n\
-        </div>\n\
-        <div class='col-lg-3 col-md-4 col-sm-4'>\n\
-        <input class='form-control' type='text' placeholder='Categoria'>\n\
-        </div>\n\
-        <div class='col-lg-3 col-md-12 col-sm-12'>\n\
-            <button id='BtnGuardar' class='btn-primary float-right btn-activity'>\n\
-            <img src='img/save.svg'>\n\
-            </button>\n\
-            <button id='BtnEliminar' class='btn-primary float-right btn-activity'>\n\
-            <img src='img/garbageWhite.svg'>\n\
-            </button>\n\
-            <button id='BtnLocal' class='btn-primary float-right btn-activity'>\n\
-            <img src='img/placeholderWhite.svg'> </button></div></div>"
-            
-                    
-                       );
-               
-                
-                        });
-                        </script>
-         
-                        <script>
-            
-            $("#NuevaActividadBtn").click(function(){
-                var NombreActividad=$("#NuevaActividadtxt").val();
-                var Actividad={
-                    Nombre:NombreActividad,
-                    Clase:"Todos",
-                    Usuario:"rick1234"
+
+        </script>
+
+        <script>
+
+            $("#NuevaActividadBtn").click(function () {
+                var NombreActividad = $("#NuevaActividadtxt").val();
+                var Actividad = {
+                    Nombre: NombreActividad,
+                    Clase: "Todos",
+                    Usuario: "rick1234"
                 };
                 $.ajax({
-                   type: "POST",
-                   url: "IngresarActividad",
-                   contentType: "application/json", // NOT dataType!
-                   data: JSON.stringify(Actividad)
-                            
+                    type: "POST",
+                    url: "IngresarActividad",
+                    contentType: "application/json", // NOT dataType!
+                    data: JSON.stringify(Actividad)
+
                 });
             });
-            
-            
-            
-            
+
+
+
+
         </script>
     </body>
 </html>
