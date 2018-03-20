@@ -27,6 +27,15 @@
     </servlet-mapping>
     
     <servlet>
+        <servlet-name>IngresarActividad</servlet-name>
+        <servlet-class>Servlets.IngresarActividad</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IngresarActividad</servlet-name>
+        <url-pattern>/IngresarActividad</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
         <servlet-name>CambiosUsuarios</servlet-name>
         <servlet-class>Servlets.CambiosUsuarios</servlet-class>
     </servlet>

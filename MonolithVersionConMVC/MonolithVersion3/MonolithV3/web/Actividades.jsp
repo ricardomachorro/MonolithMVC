@@ -17,7 +17,7 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.validate.js"></script>
-        
+       
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light  BarraDeInicio">
@@ -45,6 +45,9 @@
                             <img src="img/user.svg" class="ImagenesBarraInicio" > Usuario
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="align-content:center;">
+                            <a class="dropdown-item" >Usuario: <% 
+                                out.println(Usuario);
+                                %></a>
                             <a class="dropdown-item" href="CerrarSesion.jsp"><img src="img/enter.svg" class="ImagenesBarraInicio" > Cerrar Sesion</a>
                             <a class="dropdown-item" href="Configuracion.jsp"><img src="img/settings-work-tool.svg" class="ImagenesBarraInicio" >
                                 Configuracion</a>
@@ -121,16 +124,16 @@
                         <div class="card" >
                             <div class="card-body">
                                 <!--Seccion Nueva Actividad-->
-                                <form action="" method="Post" >
+                                
                                 <div class="row SeccionNuevaActividad" >
                                     <div class="col-lg-8 col-md-6 col-sm-12">
-                                        <input type="text" class="form-control" placeholder="Nueva Actividad" >
+                                        <input type="text" id="NuevaActividadtxt" class="form-control" placeholder="Nueva Actividad" >
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <button class="btn-primary" type="submit" id="NuevaActividadBtn" >Agregar Actividad<img src="img/add-square-button.svg" ></button>  
                                     </div>
                                 </div>
-                                </form>
+                               
                                 <!--Fin Seccion Nueva Actividad-->
 
 
@@ -342,5 +345,28 @@
                 
                         });
                         </script>
+         
+                        <script>
+            
+            $("#NuevaActividadBtn").click(function(){
+                var NombreActividad=$("#NuevaActividadtxt").val();
+                var Actividad={
+                    Nombre:NombreActividad,
+                    Clase:"Todos",
+                    Usuario:"rick1234"
+                };
+                $.ajax({
+                   type: "POST",
+                   url: "IngresarActividad",
+                   contentType: "application/json", // NOT dataType!
+                   data: JSON.stringify(Actividad)
+                            
+                });
+            });
+            
+            
+            
+            
+        </script>
     </body>
 </html>
